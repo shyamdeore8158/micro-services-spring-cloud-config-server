@@ -21,7 +21,7 @@ public class ControllerExceptionHandler {
 	@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR) // 500
 	@ExceptionHandler(Exception.class)
 	public void handleGeneralError(Exception ex) {
-		log.error("An error occurred procesing request", ex);
+		//log.error("An error occurred procesing request", ex);
 	}
 
 }

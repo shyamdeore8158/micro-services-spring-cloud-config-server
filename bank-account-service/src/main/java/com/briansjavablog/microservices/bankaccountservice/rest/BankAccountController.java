@@ -31,9 +31,9 @@ public class BankAccountController {
 		
 		bankAccountService.createBankAccount(bankAccount);
 		
-		log.info("created bank account {}", bankAccount);
+		//log.info("created bank account {}", bankAccount);
 		
-		URI uri = new URI(request.getRequestURL() + "bank-account/" + bankAccount.getAccountId());
+		URI uri = new URI(request.getRequestURL() + "/" + bankAccount.getAccountId());
 		
 		return ResponseEntity.created(uri).build();				
 	}
@@ -44,7 +44,7 @@ public class BankAccountController {
 		
 		BankAccount account = bankAccountService.retrieveBankAccount(accountId);
 		
-		log.info("retrieved bank account {}", account);
+		//log.info("retrieved bank account {}", account);
 		
 		return ResponseEntity.ok(account);				
 	}
