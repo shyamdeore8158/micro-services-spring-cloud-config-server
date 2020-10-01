@@ -1,7 +1,4 @@
-spring:  
-  cloud:
-    refresh:
-      refreshable: none
+spring:    
   datasource: 
     url: "jdbc:oracle:thin:@//192.168.101.248:1521/pdborcl.mdc.anblicks.com"
     username: "admin_poc"
@@ -16,16 +13,3 @@ spring:
     hibernate:
       dialect: "org.hibernate.dialect.Oracle10gDialect"
     #  enable_lazy_load_no_trans: true
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-      
-logging:
-  pattern: 
-    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
-
-spring-security-jwt:
-  signing.key: "@123abc$%#"
-  jwtExpiration.time: 86400
