@@ -1,0 +1,21 @@
+spring:  
+  datasource: 
+    url: "jdbc:oracle:thin:@//192.168.101.248:1521/pdborcl.mdc.anblicks.com"
+    username: "admin_poc"
+    password: "admin_poc1"
+    driver-class-name: "oracle.jdbc.OracleDriver"
+  jpa: 
+    show-sql: true
+    hibernate:
+      naming-strategy: "org.hibernate.cfg.ImprovedNamingStrategy"
+      use-new-id-generator-mappings: false
+  properties: 
+    hibernate:
+      dialect: "org.hibernate.dialect.Oracle10gDialect"
+  liquibase:
+    changeLog: "classpath:db/equipment-master-change-log.yaml"
+default:
+  rest:
+    max:
+      record:
+        size: 3
