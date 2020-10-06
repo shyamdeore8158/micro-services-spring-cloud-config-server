@@ -19,3 +19,6 @@ default:
     max:
       record:
         size: 3
+graphql:
+    schema :
+      location: "graphql/equipment.graphqls"
