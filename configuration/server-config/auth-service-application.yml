@@ -13,3 +13,7 @@ spring:
     hibernate:
       dialect: "org.hibernate.dialect.Oracle10gDialect"
     #  enable_lazy_load_no_trans: true
+graphql:
+    schema :
+      location: "graphql/auth.graphqls"    
+    

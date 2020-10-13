@@ -12,13 +12,8 @@ spring:
   properties: 
     hibernate:
       dialect: "org.hibernate.dialect.Oracle10gDialect"
-  liquibase:
-    changeLog: "classpath:db/equipment-master-change-log.yaml"
-default:
-  rest:
-    max:
-      record:
-        size: 3
 graphql:
     schema :
-      location: "graphql/equipment.graphqls"
+      location: "graphql/user.graphqls"                        
+    
+      
