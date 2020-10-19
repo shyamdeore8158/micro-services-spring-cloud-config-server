@@ -18,7 +18,7 @@ default:
   rest:
     max:
       record:
-        size: 3
+        size: 3000
 graphql:
     schema :
       location: "graphql/station.graphqls"                        
