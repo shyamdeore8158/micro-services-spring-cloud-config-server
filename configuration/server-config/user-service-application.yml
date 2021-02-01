@@ -1,17 +1,17 @@
 spring:  
   datasource: 
-    url: "jdbc:oracle:thin:@//192.168.101.248:1521/pdborcl.mdc.anblicks.com"
-    username: "admin_poc"
-    password: "admin_poc1"
-    driver-class-name: "oracle.jdbc.OracleDriver"
+    url: "jdbc:sqlserver://192.168.101.248:1433;databaseName=westeros_dev_1229"
+    username: "westeros_dev"
+    password: "westeros_dev1"
+    driver-class-name: "com.microsoft.sqlserver.jdbc.SQLServerDriver"
   jpa: 
     show-sql: true
     hibernate:
-      naming-strategy: "org.hibernate.cfg.ImprovedNamingStrategy"
+      #naming-strategy: "org.hibernate.cfg.ImprovedNamingStrategy"
       use-new-id-generator-mappings: false
   properties: 
     hibernate:
-      dialect: "org.hibernate.dialect.Oracle10gDialect"
+      dialect: "org.hibernate.dialect.SQLServer2012Dialect"
 graphql:
     schema :
       location: "graphql/user.graphqls"                        
